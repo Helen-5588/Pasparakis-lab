@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Asciidoctor 2.0.12">
-    <title>Welcome!</title>
+    <title>Setting up a productive UNIX (mac) work environment</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
     <style>
@@ -2899,122 +2899,118 @@
 
 <body class="article toc2 toc-left">
     <div id="header">
-        <h1>Welcome!</h1>
+        <h1>Setting up a productive MAC (UNIX) work environment</h1>
         <div id="toc" class="toc2">
             <div id="toctitle">Table of Contents</div>
             <ul class="sectlevel1">
-                <li><a href="#_user_password">1. User password</a></li>
-                <li><a href="#_intranet">2. Intranet</a></li>
+                <li><a href="#_file_services">1. File services</a></li>
+                <li><a href="#_printers">2. Printers</a></li>
+                <li><a href="#_iterm2">3. iTerm2 </a></li>
             </ul>
         </div>
     </div>
     <div id="content">
         <div class="sect1">
-            <h2 id="_user_password">1. User password</h2>
+            <h2 id="_file_services">1. File services</h2>
             <div class="sectionbody">
                 <div class="ulist">
                     <ul>
                         <li>
-                            <p>After you come to the CECAD building, you can just contact with the staff in the security
-                                room. Pasparakis lab is in the
-                                fifth floor of CECAD building. And then the colleague will take you to the Pasparakis lab. You will get your card to open the main gate of CECAD in
-                                the 1th floor of the CECAD building with the help of Michaela
-                                (Michaela.Winter@uni-koeln.de).</p>
+                            <p>Add the following shared folder on CECAD&#8217;s file server to Finder&#8217;s known
+                                addresses. Hit ⌘ + K in
+                                Finder to open the <a href="https://support.apple.com/en-us/HT204445">"Connect to
+                                    Server" dialog</a>.</p>
+                            <div class="sidebarblock">
+                                <div class="content">
+                                    <div class="ulist">
+                                        <ul>
+
+                                            <li>
+                                                <p>Lab folder:
+                                                    <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/</code></p>
+                                                    <p><code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis2/</code></p>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Sharing folder:
+                                                    <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/lab_members/01 Sharing</code>
+                                                    (sic!)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Monday meeting folder:
+                                                    <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/lab_members/02 Monday Meeting Presentations</code>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Individual folder:
+                                                    <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/lab_members</code>
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <p>You have received your PKZ number and your PIN in a paper letter (always sent with
-                                contract by human resource). And then follow the <a
-                                    href="https://itcc.uni-koeln.de/services/accounts-kommunikation/accounts/personal-account/freischaltung">IT
-                                    webpage</a>. Click the <a href="https://kim.uni-koeln.de/unikim_de.html">uniKIM -
-                                    Identity management at the University of Cologne</a>. Type your PKZ number and PIN
-                                to login in the <a
-                                    href="https://kim.uni-koeln.de/osp/a/idm/auth/oauth2/auth?redirect_uri=https://kim.uni-koeln.de/idmdash/oauth.html&client_id=idmdash&response_type=code">login
-                                    webpage</a>. It is recommended to
-                                change to new password as soon as possible. If there are any problems, please ask Silke
-                                (sroepke@uni-koeln.de) for help. </p>
-                        </li>
-                        <li>
-                            <p>The user password is good for all IT service at Koeln (e.g. <a
-                                    href="https://webmail.uni-koeln.de/login.php">web mail</a> , <a
-                                    href="https://rrzk.uni-koeln.de/internetzugang-web/netzzugang/vpn">VPN</a>, <a
-                                    href="https://rrzk.uni-koeln.de/internetzugang-web/netzzugang/wlan">WLAN</a> and
-                                other ITCC servers).</p>
-                        </li>
-                        <li>
-                            <p>The password can be changed in Koeln&#8217;s <a
-                                    href="https://kim.uni-koeln.de/osp/a/idm/auth/oauth2/auth?redirect_uri=https://kim.uni-koeln.de/idmdash/oauth.html&client_id=idmdash&response_type=code">login
-                                    webpage</a> interface.
-                                Click on the cog wheel icon in the bottom (Click here if you've forgotten your
-                                password.).</p>
-                        </li>
+
                     </ul>
                 </div>
             </div>
         </div>
         <div class="sect1">
-            <h2 id="_intranet">2. Intranet</h2>
+            <h2 id="_printers">2. Printers</h2>
             <div class="sectionbody">
                 <div class="ulist">
                     <ul>
                         <li>
-                            <p>The <a href="https://intranet.cecad.uni-koeln.de/">CECAD intranet</a> provides some
-                                useful
-                                information on:</p>
-                            <div class="ulist">
-                                <ul>
-                                    <li>
-                                        <p>Logos, PPT template and letter template&#8217;s information are reported on
-                                            the Intranet
-                                            <a
-                                                href="https://intranet.cecad.uni-koeln.de/design-templates">Templates</a>.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>If you want to add your email in the email address list of CECAD to receive
-                                            the institute's email, you need to type a form in the <a
-                                                href="https://www.cecad.uni-koeln.de/about-cecad/telephone-book-a-z/update-form">CECAD
-                                                Registration Tool</a></p>
-                                    </li>
+                            <p>There is a printer/scanner/copying machine (PageWide Managed Color MFP E77650) named
+                                pw-88142 in
+                                our lab. You can download and install <a
+                                    href="https://support.hp.com/hk-en/drivers/hp-pagewide-color-755-printer-series/22955784">the
+                                    Driver("Install HP Easy Start")</a> for the printer. And in this process, you should
+                                search the printer by the name (pw-88142) unless you will not find it. </p>
+                        </li>
 
-                                </ul>
-                            </div>
-                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sect1">
+            <h2 id="_iterm2">3. iTerm2</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p>Install the <a href="https://www.iterm2.com">iTerm2</a> <a
+                            href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal emulator</a> on your iMac.
+                        It is superior in all regards to the default MacOS terminal app.</p>
+                </div>
+                <div class="olist arabic">
+                    <ol class="arabic">
                         <li>
-                            <p>If you have an IT service requests, you can ask Laurens (l.wachsmuth@uni-koeln.de) for
-                                help.</p>
-                            <div class="ulist">
-                                <ul>
-                                    <li>
-                                        <p>If you need get the new adapter of mac connecting with the internet, you need
-                                            to
-                                            send the mac address (for example, 64:4b:f0:18:57:4d) of your own mac to
-                                            him.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>If you need to get the access of the folder
-                                            (CECAD-Pasparakis/CECAD-Pasparakis2) of
-                                            Lab: CECAD-nas3.itcc.uni-koeln.de </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <p>You need to download and print a <a
-                                    href="https://www.google.com/url?client=internal-element-cse&cx=003311958183833352640:c_osjgrddmg&q=https://verwaltung.uni-koeln.de/abteilung41/content/e143023/e143215/e143216/e146324/Urlaub_ohne_Glaz_ger.pdf&sa=U&ved=2ahUKEwj8k4TpzbmNAxUSWEEAHeNUDeAQFnoECAkQAQ&usg=AOvVaw2JHc9COYdJhCap3B2LweOu&fexp=72956999,72956998">table</a>
-                                to file applications for vacations and business trips and give it to Silke
-                                (sroepke@uni-koeln.de).
+                            <p>Download the latest <a href="https://www.iterm2.com/downloads.html">stable release</a>.
                             </p>
                         </li>
                         <li>
-                            <p> If you want to ask for a sick leave. you need to follow the <a
-                                    href="./1 Sick Leave Process.html">sick leave process</a></p>
+                            <p>Move the downloaded app to the MacOS <a href="file:///Applications/">Applications</a>
+                                folder.</p>
                         </li>
                         <li>
-                            <p> Safety instruction for the lab</a>. You should have contacted with lab manager: Martin
-                                (martin.hafner@uni-koeln.de) for the study of safety of the lab.</p>
+                            <p>Have a look at or <a
+                                    href="http://stackoverflow.com/questions/35211565/how-do-i-import-an-iterm2-profile">import</a>
+                                Hailin&#8217;s
+                                <a
+                                    href="https://bitbucket.org/helen_2025/pasparakis-lab/src/main/com.googlecode.iterm2.plist">configuration
+                                    file</a>.
+                            </p>
                         </li>
-                    </ul>
+                        <li>
+                            <p>Here are links to <a href="https://www.iterm2.com/documentation.html">the iTerm2
+                                    documentation</a>, <a
+                                    href="http://teohm.com/blog/working-effectively-with-iterm2/">a
+                                    tutorial</a> and <a href="https://gist.github.com/helger/3070258">a cheat sheet</a>.
+                            </p>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
