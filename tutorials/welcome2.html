@@ -2909,199 +2909,291 @@
             </ul>
         </div>
     </div>
-    <div id="content">
-        <div class="sect1">
-            <h2 id="_file_services">1. File services</h2>
-            <div class="sectionbody">
+    <div class="sect1">
+        <h2 id="_file_service">1. File service</h2>
+        <div class="sectionbody">
+
+            <!-- 1.1 File service for Mac user -->
+            <div class="sect2">
+                <h3 id="_file_service_mac">1.1 File service for Mac user</h3>
                 <div class="ulist">
                     <ul>
                         <li>
-                            <p>Add the following shared folder on CECAD&#8217;s file server to Finder&#8217;s known
-                                addresses. Hit ⌘ + K in
-                                Finder to open the <a href="https://support.apple.com/en-us/HT204445">"Connect to
-                                    Server" dialog</a>.</p>
+                            <p>Add the following shared folder on CECAD’s file server to Finder’s known
+                                addresses. Hit ⌘ + K in Finder on the Mac laptop to open the
+                                <a href="https://support.apple.com/en-us/HT204445">"Connect to Server" dialog</a>.
+                            </p>
                             <div class="sidebarblock">
                                 <div class="content">
                                     <div class="ulist">
                                         <ul>
-
                                             <li>
-                                                <p>Lab folder:
-                                                    <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/</code></p>
-                                                    <p><code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis2/</code></p>
+                                                <p>Lab folder:<br>
+                                                    <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/</code><br>
+                                                    <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis2/</code>
                                                 </p>
                                             </li>
                                             <li>
-                                                <p>Sharing folder:
+                                                <p>Sharing folder:<br>
                                                     <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/lab_members/01 Sharing</code>
                                                     (sic!)
                                                 </p>
                                             </li>
                                             <li>
-                                                <p>Monday meeting folder:
+                                                <p>Monday meeting folder:<br>
                                                     <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/lab_members/02 Monday Meeting Presentations</code>
                                                 </p>
                                             </li>
                                             <li>
-                                                <p>Individual folder:
+                                                <p>Individual folder:<br>
                                                     <code>smb://CECAD-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/lab_members</code>
                                                 </p>
                                             </li>
-
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="sect1">
-            <h2 id="_printers">2. Printer for Mac users</h2>
-            <div class="sectionbody">
+
+            <!-- 1.2 File service for Windows user -->
+            <div class="sect2">
+                <h3 id="_file_service_windows">1.2 File service for Windows user</h3>
                 <div class="ulist">
                     <ul>
                         <li>
-                            <p>There is a printer/scanner/copying machine (PageWide Managed Color MFP E77650) named
-                                pw-88142 in
-                                our lab. You can download and install <a
-                                    href="https://support.hp.com/hk-en/drivers/hp-pagewide-color-755-printer-series/22955784">the
-                                    Driver("Install HP Easy Start")</a> for the printer. And in this process, you should
-                                search the printer by the name (pw-88142). Attention! In the search dropdown menu, select Name contains instead of the first option. </p>
+                            <p>Open <strong>File Explorer</strong> and click on <strong>This PC</strong>.</p>
                         </li>
-
+                        <li>
+                            <p>Click on the <strong>Computer</strong> tab at the top and then select
+                                <strong>Map network drive</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Choose any available drive letter (e.g., <code>Z:</code>), and in the
+                                <strong>Folder</strong> field, enter one of the following paths:
+                            </p>
+                            <div class="sidebarblock">
+                                <div class="content">
+                                    <div class="ulist">
+                                        <ul>
+                                            <li>
+                                                <p>Lab folder:<br>
+                                                    <code>\\CECAD-nas3.itcc.uni-koeln.de\CECAD-Pasparakis</code><br>
+                                                    <code>\\CECAD-nas3.itcc.uni-koeln.de\CECAD-Pasparakis2</code>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Sharing folder:<br>
+                                                    <code>\\CECAD-nas3.itcc.uni-koeln.de\CECAD-Pasparakis\lab_members\01 Sharing</code>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Monday meeting folder:<br>
+                                                    <code>\\CECAD-nas3.itcc.uni-koeln.de\CECAD-Pasparakis\lab_members\02 Monday Meeting Presentations</code>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Individual folder:<br>
+                                                    <code>\\CECAD-nas3.itcc.uni-koeln.de\CECAD-Pasparakis\lab_members</code>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Check the box <strong>Reconnect at sign-in</strong> if you want Windows to remember this
+                                connection.</p>
+                        </li>
+                        <li>
+                            <p>Click <strong>Finish</strong>. When prompted, enter your CECAD credentials
+                                (<code>itcc\<em>username</em></code>) and password.</p>
+                        </li>
+                        <li>
+                            <p>You can also access the same locations directly by pressing <strong>Windows + R</strong>
+                                and entering one of the network paths above.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
+
         </div>
-        <div class="sect1">
-            <h2 id="_software_information">3. Software Information</h2>
-            <div class="sectionbody">
-                <div class="sect2">
-                    <h3 id="_iterm2">3.1. iTerm2</h3>
-                    <div class="paragraph">
-                        <p>Install the <a href="https://www.iterm2.com">iTerm2</a> <a
-                                href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal emulator</a> on your iMac.
-                            It is superior in all regards to the default MacOS terminal app.</p>
-                    </div>
-                    <div class="olist arabic">
-                        <ol class="arabic">
-                            <li>
-                                <p>Download the latest <a href="https://www.iterm2.com/downloads.html">stable release</a>.
-                                </p>
-                            </li>
-                            <li>
-                                <p>Move the downloaded app to the MacOS <a href="file:///Applications/">Applications</a>
-                                    folder.</p>
-                            </li>
-                            <li>
-                                <p>Have a look at or <a
-                                        href="http://stackoverflow.com/questions/35211565/how-do-i-import-an-iterm2-profile">import</a>
-                                    Hailin&#8217;s
-                                    <a
-                                        href="https://bitbucket.org/helen_2025/pasparakis-lab/src/main/com.googlecode.iterm2.plist">configuration
-                                        file</a>.
-                                </p>
-                            </li>
-                            <li>
-                                <p>Here are links to <a href="https://www.iterm2.com/documentation.html">the iTerm2
-                                        documentation</a>, <a
-                                        href="http://teohm.com/blog/working-effectively-with-iterm2/">a
-                                        tutorial</a> and <a href="https://gist.github.com/helger/3070258">a cheat sheet</a>.
-                                </p>
-                            </li>
-                        </ol>
-                    </div>
+    </div>
+
+    <div class="sect1">
+        <h2 id="_printers">2. Printer for Mac users</h2>
+        <div class="sectionbody">
+            <div class="ulist">
+                <ul>
+                    <li>
+                        <p>There is a printer/scanner/copying machine (PageWide Managed Color MFP E77650) named
+                            pw-88142 in
+                            our lab. You can download and install <a
+                                href="https://support.hp.com/hk-en/drivers/hp-pagewide-color-755-printer-series/22955784">the
+                                Driver("Install HP Easy Start")</a> for the printer. And in this process, you should
+                            search the printer by the name (pw-88142). Attention! In the search dropdown menu, select
+                            Name contains instead of the first option. </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sect1">
+        <h2 id="_software_information">3. Software Information</h2>
+        <div class="sectionbody">
+            <div class="sect2">
+                <h3 id="_iterm2">3.1. iTerm2</h3>
+                <div class="paragraph">
+                    <p>Install the <a href="https://www.iterm2.com">iTerm2</a> <a
+                            href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal emulator</a> on your iMac.
+                        It is superior in all regards to the default MacOS terminal app.</p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_booked_calendar">3.2. Booked Calendar AG Pasparakis</h3>
-                    <div class="paragraph">
-                        <p><a href="https://booked.uni-koeln.de/pasparakis/">https://booked.uni-koeln.de/pasparakis/</a></p>
-                        <p>(needs uni-koeln.de account – get access from Laurens)</p>
-                    </div>
+                <div class="olist arabic">
+                    <ol class="arabic">
+                        <li>
+                            <p>Download the latest <a href="https://www.iterm2.com/downloads.html">stable release</a>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Move the downloaded app to the MacOS <a href="file:///Applications/">Applications</a>
+                                folder.</p>
+                        </li>
+                        <li>
+                            <p>Have a look at or <a
+                                    href="http://stackoverflow.com/questions/35211565/how-do-i-import-an-iterm2-profile">import</a>
+                                Hailin&#8217;s
+                                <a
+                                    href="https://bitbucket.org/helen_2025/pasparakis-lab/src/main/com.googlecode.iterm2.plist">configuration
+                                    file</a>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Here are links to <a href="https://www.iterm2.com/documentation.html">the iTerm2
+                                    documentation</a>, <a
+                                    href="http://teohm.com/blog/working-effectively-with-iterm2/">a
+                                    tutorial</a> and <a href="https://gist.github.com/helger/3070258">a cheat sheet</a>.
+                            </p>
+                        </li>
+                    </ol>
                 </div>
-                <div class="sect2">
-                    <h3 id="_electronic_lab_book">3.3. Electronic Lab Book</h3>
-                    <div class="paragraph">
-                        <p><a href="https://elj.uni-koeln.de/">https://elj.uni-koeln.de/</a></p>
-                        <p>(needs uni-koeln.de account – get access from Laurens)</p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_booked_calendar">3.2. Booked Calendar AG Pasparakis</h3>
+                <div class="paragraph">
+                    <p><a href="https://booked.uni-koeln.de/pasparakis/">https://booked.uni-koeln.de/pasparakis/</a></p>
+                    <p>(needs uni-koeln.de account – get access from Laurens)</p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_microsoft_office">3.4. Microsoft Office</h3>
-                    <div class="paragraph">
-                        <p>Uninstall everything that looks like office from the laptop</p>
-                        <p>Go to: <code>\\cecad-nas3.itcc.uni-koeln.de\CECAD-Pasparakis\common\Software\MS Office\MS Office</code></p>
-                        <p>And install office</p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_electronic_lab_book">3.3. Electronic Lab Book</h3>
+                <div class="paragraph">
+                    <p><a href="https://elj.uni-koeln.de/">https://elj.uni-koeln.de/</a></p>
+                    <p>(needs uni-koeln.de account – get access from Laurens)</p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_cisco">3.5. Cisco</h3>
-                    <div class="paragraph">
-                        <p><strong>First time registration:</strong></p>
-                        <p><a href="https://itcc.uni-koeln.de/en/services/accounts-communication/multifactor-authentication-cisco-duo/initial-registration-in-cisco-duo">https://itcc.uni-koeln.de/en/services/accounts-communication/multifactor-authentication-cisco-duo/initial-registration-in-cisco-duo</a></p>
-                        <p><strong>Install Cisco VPN:</strong></p>
-                        <p><a href="https://itcc.uni-koeln.de/en/services/internet-access-web/network-access/vpn">https://itcc.uni-koeln.de/en/services/internet-access-web/network-access/vpn</a></p>
-                        <p><strong>Install Cisco Antivirus:</strong></p>
-                        <p><a href="https://itcc.uni-koeln.de/en/services/software/general-agreements-and-campus-licenses/utility-programs-and-systems/cisco-secure-endpoint">https://itcc.uni-koeln.de/en/services/software/general-agreements-and-campus-licenses/utility-programs-and-systems/cisco-secure-endpoint</a></p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_microsoft_office">3.4. Microsoft Office</h3>
+                <div class="paragraph">
+                    <p>Uninstall everything that looks like office from the laptop</p>
+                    <p>Windows Go to:
+                        <code>\\cecad-nas3.itcc.uni-koeln.de\CECAD-Pasparakis\common\Software\MS Office\MS Office</code>
+                    </p>
+                    <p>Mac Go to:
+                        <code>smb://cecad-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/common/Software/MS Office/MS Office</code>
+                    </p>
+                    <p>And install office</p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_java">3.6. Java</h3>
-                    <div class="paragraph">
-                        <p><a href="https://wiki.uni-koeln.de/cri-s/index.php/Java">https://wiki.uni-koeln.de/cri-s/index.php/Java</a></p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_cisco">3.5. Cisco</h3>
+                <div class="paragraph">
+                    <p><strong>First time registration:</strong></p>
+                    <p><a
+                            href="https://itcc.uni-koeln.de/en/services/accounts-communication/multifactor-authentication-cisco-duo/initial-registration-in-cisco-duo">https://itcc.uni-koeln.de/en/services/accounts-communication/multifactor-authentication-cisco-duo/initial-registration-in-cisco-duo</a>
+                    </p>
+                    <p><strong>Install Cisco VPN:</strong></p>
+                    <p><a
+                            href="https://itcc.uni-koeln.de/en/services/internet-access-web/network-access/vpn">https://itcc.uni-koeln.de/en/services/internet-access-web/network-access/vpn</a>
+                    </p>
+                    <p><strong>Install Cisco Antivirus:</strong></p>
+                    <p><a
+                            href="https://itcc.uni-koeln.de/en/services/software/general-agreements-and-campus-licenses/utility-programs-and-systems/cisco-secure-endpoint">https://itcc.uni-koeln.de/en/services/software/general-agreements-and-campus-licenses/utility-programs-and-systems/cisco-secure-endpoint</a>
+                    </p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_adobe_acrobat">3.7. Adobe Acrobat (free)</h3>
-                    <div class="paragraph">
-                        <p><a href="https://itcc.uni-koeln.de/en/services/software/rahmenvertraege-und-campuslizenzen/produktivitaetsanwendung/adobe">https://itcc.uni-koeln.de/en/services/software/rahmenvertraege-und-campuslizenzen/produktivitaetsanwendung/adobe</a></p>
-                        <p>(other adobe products are not free at all)</p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_java">3.6. Java</h3>
+                <div class="paragraph">
+                    <p><a
+                            href="https://wiki.uni-koeln.de/cri-s/index.php/Java">https://wiki.uni-koeln.de/cri-s/index.php/Java</a>
+                    </p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_printer_info">3.8. Printer</h3>
-                    <div class="paragraph">
-                        <p>pw-88142</p>
-                        <p><a href="https://wiki.uni-koeln.de/cri-s/index.php/Printer">https://wiki.uni-koeln.de/cri-s/index.php/Printer</a></p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_adobe_acrobat">3.7. Adobe Acrobat (free)</h3>
+                <div class="paragraph">
+                    <p><a
+                            href="https://itcc.uni-koeln.de/en/services/software/rahmenvertraege-und-campuslizenzen/produktivitaetsanwendung/adobe">https://itcc.uni-koeln.de/en/services/software/rahmenvertraege-und-campuslizenzen/produktivitaetsanwendung/adobe</a>
+                    </p>
+                    <p>(other adobe products are not free at all)</p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_incucyte">3.9. Incucyte 2023A</h3>
-                    <div class="paragraph">
-                        <p><code>\\cecad-nas3.itcc.uni-koeln.de\CECAD-Pasparakis\common\Incucyte software</code></p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_printer_info">3.8. Printer</h3>
+                <div class="paragraph">
+                    <p>pw-88142</p>
+                    <p><a
+                            href="https://wiki.uni-koeln.de/cri-s/index.php/Printer">https://wiki.uni-koeln.de/cri-s/index.php/Printer</a>
+                    </p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_zotero">3.10. Zotero (Citation Manager)</h3>
-                    <div class="paragraph">
-                        <p><a href="https://www.zotero.org/">https://www.zotero.org/</a></p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_incucyte">3.9. Incucyte 2023A</h3>
+                <div class="paragraph">
+                    <p> Windows Go to:
+                        <code>\\cecad-nas3.itcc.uni-koeln.de\CECAD-Pasparakis\common\Incucyte software</code>
+                    </p>
+                    <p>Mac Go to:
+                        <code>smb://cecad-nas3.itcc.uni-koeln.de/CECAD-Pasparakis/common/Incucyte software</code>
+                    </p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_inkscape">3.11. Inkscape (for designing figures)</h3>
-                    <div class="paragraph">
-                        <p><a href="https://inkscape.org/">https://inkscape.org/</a></p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_zotero">3.10. Zotero (Citation Manager)</h3>
+                <div class="paragraph">
+                    <p><a href="https://www.zotero.org/">https://www.zotero.org/</a></p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_gimp">3.12. Gimp (free Photoshop alternative)</h3>
-                    <div class="paragraph">
-                        <p><a href="https://www.gimp.org/">https://www.gimp.org/</a></p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_inkscape">3.11. Inkscape (for designing figures)</h3>
+                <div class="paragraph">
+                    <p><a href="https://inkscape.org/">https://inkscape.org/</a></p>
                 </div>
-                <div class="sect2">
-                    <h3 id="_omero">3.13. Microscopy Image Organization in Omero</h3>
-                    <div class="paragraph">
-                        <p><strong>CECAD server:</strong> <a href="https://omero-1-web.cecad.uni-koeln.de/">https://omero-1-web.cecad.uni-koeln.de/</a></p>
-                        <p><strong>Software download:</strong> <a href="https://www.openmicroscopy.org/omero/">https://www.openmicroscopy.org/omero/</a></p>
-                        <p>Needs activation by CECAD Image facility</p>
-                    </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_gimp">3.12. Gimp (free Photoshop alternative)</h3>
+                <div class="paragraph">
+                    <p><a href="https://www.gimp.org/">https://www.gimp.org/</a></p>
+                </div>
+            </div>
+            <div class="sect2">
+                <h3 id="_omero">3.13. Microscopy Image Organization in Omero</h3>
+                <div class="paragraph">
+                    <p><strong>CECAD server:</strong> <a
+                            href="https://omero-1-web.cecad.uni-koeln.de/">https://omero-1-web.cecad.uni-koeln.de/</a>
+                    </p>
+                    <p><strong>Software download:</strong> <a
+                            href="https://www.openmicroscopy.org/omero/">https://www.openmicroscopy.org/omero/</a></p>
+                    <p>Needs activation by CECAD Image facility</p>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
     <div id="footer">
